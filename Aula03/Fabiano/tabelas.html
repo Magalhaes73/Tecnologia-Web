@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    
+    <table border="1" width="100%">              <!-- Tabela -->
+        <thead>
+            <tr>
+                <th>Nome</th>           <!-- <th> = Table Head-->
+                <th>CPF</th>
+                <th>RG</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>                        <!-- Table Row = Linhas da Tabela -->
+                <td rowspan="2">Gabriel</td>           <!-- Table Data-->
+                <td>123.456.789-09</td> <!-- ocupa mais de um espaço na vertical, nesse caso ocupa 2 linhas -->
+                <td>12.345.678-9</td>
+            </tr>
+            <tr>                
+                <!-- <td>2,1</td> --> <!-- está comentada porque o rowspan já está ocupando esse espaço -->
+                <td>529.982.247-25</td>
+                <td>23.456.789-1</td>
+            </tr>
+            <tr>                
+                <td>Bianca</td>      
+                <td colspan="2">111.444.777-35</td> <!-- ocupa mais de um espaço na horizontal, nesse caso ocupa 2 colunas -->
+                <!-- <td>3,3</td> --> <!-- está comentada porque o colspan já está ocupando esse espaço -->
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>                
+                <td>Vinnicius</td>
+                <td></td> <!-- Dado Vazio -->
+                <td>34.567.890-1</td>
+            </tr>
+        </tfoot>
+            
+    </table>
+
+</body>
+</html>

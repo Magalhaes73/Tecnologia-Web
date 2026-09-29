@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Fabiano</title>
+</head>
+<body>
+    
+    <h2> Formulário HTML </h2>
+
+    <form method="get">
+
+        <!-- disabled readonly required -->
+        <!--
+        Cores:
+            Hex #F00
+            RGB (0, 255, 0)
+            Nome "blue"
+        -->
+
+        <fieldset> <!-- faz uma caixa de contorno dentro do grupo -->
+            <legend> Campos básicos</legend> <!-- legend é o título principal de um fieldset, só pode haver 1 por fieldset -->
+
+            <label for="box_texto">Texto</label> <!-- o label funciona como etiqueta, se você preencher o for com o id de um input sempre que aquele texto for clicado o input será selecionado -->
+            <input type="text" name="box_texto" id="box_texto" value="123"> <br>   <!-- value = preenchimento automático do campo -->
+            
+            <label for="box_texto2">Texto2</label>
+            <input type="text" name="box_texto2" id="box_texto2" minlength="3"> <br>   <!-- minlenght = minimo de caracteres -->
+            
+            <label for="box_email">Email</label>
+            <input type="email" name="box_email" id="box_email" placeholder="user@example.com"> <br> <!-- placeholder é um texto que é exibido quando o campo está vazio -->
+            
+            <label for="box_senha">Senha</label>
+            <input type="password" name="box_senha" id="box_senha" required> <br> <!-- required = obrigatório; não é possível enviar sem preencher -->
+
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero" min="0" max="10" step=".1"> <br> <!-- step vai ser um menu suspenso para aumentar ou diminuir o valor do campo, nesse caso aumenta ou diminui em 0,1 -->
+            
+            <label for="data">Date</label>
+            <input type="date" name="data" id="data"> <br>
+            
+        </fieldset>
+        
+        <fieldset>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor" value="#F00"> <br> <!-- inicia com vermelho, porém é editável -->
+            
+            <label for="arquivo">Arquivo</label>
+            <input type="file" name="arquivo" id="arquivo"> <br> <!-- permite fazer upload de um arquivo -->
+        </fieldset>
+
+        <hr>
+        <!-- Tipos de Caixa de seleção -->
+        <label for="">Checkbox</label>
+        <input type="checkbox" checked> <!-- checked = começa marcada -->
+        <input type="checkbox"> <br>
+        
+        <label for="">Radio</label> <!-- são caixas de seleção porém só permite que 1 delas seja marcada -->
+        <input type="radio" name="radio"> 
+        <input type="radio" name="radio" checked>  <br>
+        
+        <label for="">Oculto</label> <!-- serve para enviar para o servidor dados que independem do usuário ou dados que ele não precise responder -->
+        <input type="hidden"> <br>
+
+        <hr>
+        <label for="">UF</label>
+        <select> <!-- Menu suspenso -->
+            <option value="" disabled selected>Escolha uma opção</option> <!-- o disabled significa que não é uma opção que pode ser escolhida manualmente e o selected significa que ela já vem selecionada por padrão -->
+            <option value="BA">Bahia</option>
+            <option value="AL">Alagoas</option>
+            <option value="SE">Sergipe</option>
+            <option value="PE">Pernambuco</option>
+        </select> <br>
+
+        <label for="obs">Textarea</label>
+        <textarea placeholder="Observações" id="obs"></textarea> <!-- é um input do tipo texto, porém ao invés de uma só linha, é um campo de várias linhas, usado normalmente para observações -->
+        
+        <input type="submit" value="Enviar">
+        <button type="submit"> Enviar 2 </button>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
