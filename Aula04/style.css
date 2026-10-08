@@ -1,0 +1,39 @@
+
+/* Regra 1 */
+body{
+    background-color: blueviolet;
+}
+
+/* Regra 2 */
+h1, h2{ /* Agrupamento, se a mesma classe for feita 2x, o css priorida o mais em baixo */
+    color: white;
+}
+
+/* .class */
+.esporte{
+    background-color: green;
+}
+
+/* #id */
+
+#pagina1{
+    background-color: red;
+}
+
+/* Filho Qualquer */
+div .teste {
+    background-color: coral;
+}
+
+/* Filho Direto */
+div > .teste {
+    background-color: cornflowerblue;
+}
+
+/* Pseudo-Classe */
+.esporte:hover{
+    background-color: rgb(72, 138, 72);
+    border: 2px solid burlywood;
+    border-radius: 15px;
+    /* Sempre que passar o mouse por cima */
+}
