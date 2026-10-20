@@ -1,12 +1,30 @@
-
-/* Regra 1 */
-body{
-    background-color: blueviolet;
+/*
+Regra CSS
+seletor{
+    propriedade1 : valor1;
+    propriedade2 : valor2;
+    ...
+    propriedadeN : valorN;
 }
 
-/* Regra 2 */
-h1, h2{ /* Agrupamento, se a mesma classe for feita 2x, o css priorida o mais em baixo */
-    color: white;
+Seletores:
+    - tag = 
+    - classe = .
+    - identificador = #
+    - pseudo-classe
+    - atributos = [type="text"]
+*/
+
+/* Tag */
+h2{
+    background-color: blue;
+    color: #fff;
+}
+
+/* agrupamento */
+h1, .esporte{
+    background-color: blue;
+    color: #fff;
 }
 
 /* .class */
@@ -15,25 +33,26 @@ h1, h2{ /* Agrupamento, se a mesma classe for feita 2x, o css priorida o mais em
 }
 
 /* #id */
-
-#pagina1{
+#teste3{
     background-color: red;
 }
 
-/* Filho Qualquer */
-div .teste {
-    background-color: coral;
+/* Hierarquia: Qualquer nível */
+div .teste{
+    background-color: grey;
 }
 
-/* Filho Direto */
-div > .teste {
-    background-color: cornflowerblue;
+/* Hierarquia: Nível direto */
+div > .teste{
+    background-color: yellow;
 }
 
-/* Pseudo-Classe */
-.esporte:hover{
-    background-color: rgb(72, 138, 72);
-    border: 2px solid burlywood;
-    border-radius: 15px;
-    /* Sempre que passar o mouse por cima */
+/* Pseudo-classe */
+.teste:hover{
+    background-color: black;
+}
+
+/* Por atributo */
+[type="text"]{
+    background-color: red;
 }
